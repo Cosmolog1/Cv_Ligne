@@ -15,11 +15,12 @@ async function fetchGitHubProfile(username) {
         }
         const data = await response.json();
     
-
+console.log(data)
         // Construire le contenu HTML à partir des données du profil
         const profileHTML = `
             <img src="${data.avatar_url}" alt="${data.login}'s avatar" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
             <h2>${data.name || data.login}</h2>
+            <p>${data.email}</p>
             <p>${data.bio || "No bio available."}</p>
             <p>Public Repositories: ${data.public_repos}</p>
             <a href="${data.html_url}" target="_blank" style="text-decoration: none; color: blue;">View GitHub Profile</a>
