@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv_Ligne</title>
-    <script src="Script.js"></script>
+    <script src="Script.js" defer></script>
     <link href="Style.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
     <header>
-        <h1>Maxime Bourret</h1> 
+        <h1>Maxime Bourret</h1>
     </header>
 
     <main>
-
+        <div id="profile"></div>
         <h2>Présentation Personnelle</h2>
         <p1>
             Dévellopeur web<br>
@@ -25,17 +27,24 @@
         </p1>
         
         <h2>Compétences technique</h2>
-        <p2>
-            Html, Css, Github
-        </p2>
+            <i class='bx bxl-github bx-md'></i>
+            <box-icon type='logo' name='github'></box-icon>
+            <i class='bx bxl-git bx-md'></i>
+            <box-icon type='logo' name='git'></box-icon>
+            <i class='bx bxl-html5 bx-md'></i>
+            <box-icon type='logo' name='html5'></box-icon>
+            <i class='bx bxl-css3 bx-md'></i>
+            <box-icon type='logo' name='css3'></box-icon>
+            <i class='bx bxl-javascript bx-md'></i>
+            <box-icon type='logo' name='javascript'></box-icon>
 
         <h2>Expérience proffessionel</h2>
-        <p3>2013 à 2016 Apprenti Technicien GTB chez DeltaDore Meylan<br>
+        <p3>2013 à 2016 : Apprenti Technicien GTB chez DeltaDore Meylan<br>
             Réalisation de site intranet de supervision et reportage de points <br>
             (chauffage, éclairage ...) de la GTB pour le secteur tertiaire uniquement.<br>
             Utilisation des protocoles Batibus, Lonworks, Knx<br><br>
 
-            2017 à 2024 Inspecteur chez Bureau Véritas Grenoble<br>
+            2017 à 2024 : Inspecteur chez Bureau Véritas Grenoble<br>
             Vérifications réglementaires techniques du bâtiment en totale autonomie<br>
             pour des entreprises et des établissements recevant du public.<br>
             (Installations électriques, Gaz et moyens de secours).
@@ -43,11 +52,13 @@
 
 
         <h2>Contact et Liens</h2>
-        <p4>
-            <a href="https://github.com/Cosmolog1">Github_Profil</a>
-        </p4>
+        <button id="display"> My Projects </button>
+        <div id="repos"></div>
+       
+       
 
     </main>
 
 </body>
+
 </html>
