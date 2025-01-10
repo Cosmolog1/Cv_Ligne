@@ -1,1 +1,18 @@
 
+.icon {
+    transition : color 500ms ease-out;
+}
+
+.icon:hover {
+    fill : blue;
+}
+
+
+.liens{
+    display: block;
+    align-items: baseline;
+}
+
+#display {
+    display:block;
+}
