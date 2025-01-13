@@ -3,16 +3,10 @@ const profileDiv = document.getElementById("profile");
 const reposDiv = document.getElementById("repos");
 const display = document.querySelector("#display")
 
-// Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token =  ""
 // Fonction pour récupérer et afficher les données du profil GitHub
 async function fetchGitHubProfile(username) {
     try {
-        const response = await fetch(`https://api.github.com/users/${username}`,  {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        });
+        const response = await fetch(`https://api.github.com/users/${username}`);
 
 
 
