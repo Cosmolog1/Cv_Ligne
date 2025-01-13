@@ -53,16 +53,19 @@ a{
 
 body{
    background: #B6CDE8;
+   display:flex;
+   justify-content: center;
+   text-align: center;
 }
 
 .h1,h2{
-    color: #FF584D;
+    color: #c4663d;
 }
 
 /* Style boutton my projects */
 
 .button01 {
-  margin: 7GITpx;
+  margin: auto;
   padding: 15px 30px;
   text-align: center;
   text-transform: uppercase;
@@ -90,4 +93,10 @@ body{
 
 .button01:active {
   transform: scale(0.95);
+}
+
+.img_language{
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
 }
