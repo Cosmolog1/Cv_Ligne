@@ -4,8 +4,7 @@ const reposDiv = document.getElementById("repos");
 const display = document.querySelector("#display")
 
 // Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token = "";
-
+const token =  ""
 // Fonction pour récupérer et afficher les données du profil GitHub
 async function fetchGitHubProfile(username) {
     try {
@@ -27,7 +26,6 @@ console.log(data)
         const profileHTML = `
             <img src="${data.avatar_url}" alt="${data.login}'s avatar" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
             <h2>${data.name || data.login}</h2>
-            <p>${data.email}</p>
             <p>${data.bio || "No bio available."}</p>
             <p>Public Repositories: ${data.public_repos}</p>
             <a href="${data.html_url}" target="_blank" style="text-decoration: none; color: blue;">View GitHub Profile</a>

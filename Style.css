@@ -1,12 +1,46 @@
+/* Style icone linkedin */
 
-.icon {
+.icon_linkedin {
     transition : color 500ms ease-out;
 }
 
-.icon:hover {
+.icon_linkedin:hover {
     fill : blue;
 }
 
+/* Style icone gmail */
+
+.icon_gmail {
+    transition : color 500ms ease-out;
+}
+
+.icon_gmail:hover {
+    fill : red;
+}
+
+/* Style icone whatsapp */
+
+.icon_whatsapp {
+    transition : color 500ms ease-out;
+}
+
+.icon_whatsapp:hover {
+    fill : green;
+}
+
+/* Style icone instagram */
+
+.icon_instagram {
+    transition : color 500ms ease-out;
+}
+
+.icon_instagram:hover {
+    fill : rgb(255, 0, 106);
+}
+
+a{
+    text-decoration: none;
+}
 
 .liens{
     display: block;
@@ -15,4 +49,45 @@
 
 #display {
     display:block;
+}
+
+body{
+   background: #B6CDE8;
+}
+
+.h1,h2{
+    color: #FF584D;
+}
+
+/* Style boutton my projects */
+
+.button01 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button01:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button01:active {
+  transform: scale(0.95);
 }

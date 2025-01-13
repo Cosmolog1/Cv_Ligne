@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv_Ligne</title>
-    <script src="Script.js" defer></script>
-    <link href="Style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -15,42 +15,57 @@
 
     <main>
         <div id="profile"></div>
-        <h2>Présentation Personnelle</h2>
+
+        <div class="presentation">
+            <h2>Présentation Personnelle</h2>
         
             <h4>Dévellopeur web</h4>
-        <p1>
-            32 ans ; Réside à Clermont-ferrand ; Originiaire de Savoie <br>
-            Pratique réguliére du sport, des jeux video, lecture, sortie festive.<br>
-            Aime les concerts et festivals, N'aime pas tous ce qui est superficielle.
-        </p1>
+                <p1>
+                32 ans ; Réside à Clermont-ferrand ; Originiaire de Savoie <br>
+                Pratique réguliére du sport, des jeux video, lecture, sortie festive.<br>
+                Aime les concerts et festivals, N'aime pas tous ce qui est superficielle.
+                </p1>
+
+                <div class = "technique">
+                    <h2>Compétences technique</h2>
+                    <box-icon type='logo' name='github' size="40px"></box-icon>
+                    <box-icon type='logo' name='git' size="40px"></box-icon>
+                    <box-icon type='logo' name='html5' size="40px"></box-icon>
+                    <box-icon type='logo' name='css3' size="40px"></box-icon>
+                    <box-icon type='logo' name='javascript' size="40px"></box-icon>
+                </div>
+
+            <h2>Expérience proffessionel</h2>
+                <p3>2013 à 2016 : Apprenti Technicien GTB chez DeltaDore Meylan<br>
+                    Réalisation de site intranet de supervision et reportage de points <br>
+                    (chauffage, éclairage ...) de la GTB pour le secteur tertiaire uniquement.<br>
+                    Utilisation des protocoles Batibus, Lonworks, Knx<br><br>
+
+                    2017 à 2024 : Inspecteur chez Bureau Véritas Grenoble<br>
+                    Vérifications réglementaires techniques du bâtiment en totale autonomie<br>
+                    pour des entreprises et des établissements recevant du public.<br>
+                    (Installations électriques, Gaz et moyens de secours).
+                </p3>
+        </div>
         
-        <h2>Compétences technique</h2>
-            <box-icon type='logo' name='github' size="40px"></box-icon>
-            <box-icon type='logo' name='git' size="40px"></box-icon>
-            <box-icon type='logo' name='html5' size="40px"></box-icon>
-            <box-icon type='logo' name='css3' size="40px"></box-icon>
-            <box-icon type='logo' name='javascript' size="40px"></box-icon>
-
-        <h2>Expérience proffessionel</h2>
-        <p3>2013 à 2016 : Apprenti Technicien GTB chez DeltaDore Meylan<br>
-            Réalisation de site intranet de supervision et reportage de points <br>
-            (chauffage, éclairage ...) de la GTB pour le secteur tertiaire uniquement.<br>
-            Utilisation des protocoles Batibus, Lonworks, Knx<br><br>
-
-            2017 à 2024 : Inspecteur chez Bureau Véritas Grenoble<br>
-            Vérifications réglementaires techniques du bâtiment en totale autonomie<br>
-            pour des entreprises et des établissements recevant du public.<br>
-            (Installations électriques, Gaz et moyens de secours).
-        </p3>
-
-
-        <h2>Contact et Liens</h2>
         <div class="liens">
-            <a href ="https://www.linkedin.com/in/maxime-bourret-811a19102/" target="_blank">
-            <box-icon type='logo' name='linkedin-square' class="icon" size="40px"></box-icon>
-            </a>
-            <button id="display" type="button"> My Projects </button>
-            <div id="repos"></div>
+            <h2>Contact et Liens</h2>
+
+                <a href ="https://www.linkedin.com/in/maxime-bourret-811a19102/" target="_blank">
+                <box-icon type='logo' name='linkedin-square' class="icon_linkedin" size="40px"></box-icon>
+                </a>
+                <a href ="https://workspace.google.com/intl/fr/gmail/" target="_blank">
+                <box-icon name='envelope' class="icon_gmail" size="40px"></box-icon>
+                </a>
+                <a href ="https://web.whatsapp.com/" target="_blank">
+                <box-icon type='logo' name='whatsapp' class="icon_whatsapp" size="40px"></box-icon>
+                </a>
+                <a href ="https://www.instagram.com/accounts/login/" target="_blank">
+                <box-icon name='instagram-alt' type='logo' class="icon_instagram" size="40px"></box-icon>
+                </a>
+
+                <button id="display" type="button" class="button01"> My Projects </button>
+                <div id="repos"></div>
         </div>
        
 
