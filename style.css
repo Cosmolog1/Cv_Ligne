@@ -47,6 +47,12 @@ a{
     align-items: baseline;
 }
 
+.interractif{
+    display: flex;
+    justify-content : space-between;
+}
+
+
 #display {
     display:block;
 }
